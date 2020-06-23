@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import QMainWindow, QAction, QMenu, QWidget, QVBoxLayout, QStackedWidget
 
+from GUIFiles.AppWidgets import ChangeCases
 from General import Constants
 from CustomWrappers import PyCute
 
@@ -12,16 +13,16 @@ class MainWindow(QMainWindow):
 
         self.menu_to_widget_dict = {
             "Strings": {
-                "Change Cases": self.get_temp_widget("text is 0")
+                "Change Cases": ChangeCases.ChangeCases()
             },
             "PDFs": {
-                "Image to PDF": self.get_temp_widget("text is 1"),
-                "PDF to Image": self.get_temp_widget("text is 2"),
+                "Image to PDF": get_temp_widget("text is 1"),
+                "PDF to Image": get_temp_widget("text is 2"),
                 "PDF to Text": None
             },
             "Calculators": {
                 "Monitor Measurer": None,
-                "Pythagorean": self.get_temp_widget("text is 3")
+                "Pythagorean": get_temp_widget("text is 3")
             },
             "Terminal Customizer": None
         }
@@ -31,12 +32,6 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(self.stacked_widget)
         self.setup_gui()
-
-    def get_temp_widget(self, default_text):
-        temp_widget = QWidget()
-        temp_widget.setLayout(PyCute.add_to_layout(QVBoxLayout(), PyCute.Button(default_text=default_text,
-                                                                                connect_func=None)))
-        return temp_widget
 
     def change_stack_to_widget(self, widget_in_stack):
         def change_stack_to_widget_helper():
@@ -71,3 +66,10 @@ class MainWindow(QMainWindow):
         self.setGeometry(300, 300, 300, 200)
         self.setWindowTitle(Constants.main_window_title)
         self.show()
+
+
+def get_temp_widget(default_text):
+    temp_widget = QWidget()
+    temp_widget.setLayout(PyCute.add_to_layout(QVBoxLayout(), PyCute.Button(default_text=default_text,
+                                                                            connect_func=None)))
+    return temp_widget

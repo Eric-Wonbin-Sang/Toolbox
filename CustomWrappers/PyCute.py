@@ -21,9 +21,7 @@ class TextBox(PyQt5.QtWidgets.QLineEdit):
 
         super().__init__()
 
-        # self.text = str(text)
-
-        if self.text:
+        if text is not None:
             self.setText(str(text))
 
 
