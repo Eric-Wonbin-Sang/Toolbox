@@ -6,7 +6,7 @@ from GUIFiles import MainWindow
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
-    gui = MainWindow.MainWindow()
+    MainWindow.MainWindow()
     sys.exit(app.exec_())
 
 
