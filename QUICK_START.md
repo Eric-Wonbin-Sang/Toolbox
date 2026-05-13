@@ -79,7 +79,7 @@ http://localhost:5173
 ## 📁 Project Structure
 
 ```
-file-organizer/
+Toolbox/
 ├── backend/              # Python FastAPI server
 │   ├── .venv/           # Virtual environment (CREATED)
 │   ├── app/

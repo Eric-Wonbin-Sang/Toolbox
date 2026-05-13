@@ -149,7 +149,7 @@ npm install
 ### Settings not saving
 
 **Cause**: data/ directory not writable
-- Check that `file-organizer/data/` folder has write permissions
+- Check that `Toolbox/data/` folder has write permissions
 - On Linux/Mac: `chmod 755 data/`
 
 ## Development Workflow

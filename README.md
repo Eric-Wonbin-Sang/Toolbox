@@ -62,7 +62,7 @@ bash run-frontend.sh
 ## 📁 Project Structure
 
 ```
-file-organizer/
+Toolbox/
 ├── frontend/              # React application
 │   ├── src/
 │   │   ├── components/   # UI components
