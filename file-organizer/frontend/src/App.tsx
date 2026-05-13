@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Box, Container, Grid, AppBar, Toolbar, Typography, Button, IconButton, Tooltip } from '@mui/material'
+import { useState, useEffect } from 'react'
+import { Box, Container, Grid, AppBar, Toolbar, Typography, IconButton, Tooltip } from '@mui/material'
 import SettingsIcon from '@mui/icons-material/Settings'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import { DirectoryInput } from './components/DirectoryInput'
