@@ -4,7 +4,7 @@
 $ErrorActionPreference = "Stop"
 
 # Root project path
-$ProjectRoot = "C:\LocalCodingProjects\Toolbox\file-organizer"
+$ProjectRoot = "."
 
 # Backend paths
 $BackendPath = Join-Path $ProjectRoot "backend"
