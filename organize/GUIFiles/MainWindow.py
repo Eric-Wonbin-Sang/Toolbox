@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import QMainWindow, QAction, QMenu, QWidget, QVBoxLayout, QStackedWidget
 
-from GUIFiles.AppWidgets import ChangeCases
-from General import Constants
-from CustomWrappers import PyCute
+from organize.GUIFiles.AppWidgets import ChangeCases
+from organize.General import Constants
+from organize.CustomWrappers import PyCute
 
 
 class MainWindow(QMainWindow):

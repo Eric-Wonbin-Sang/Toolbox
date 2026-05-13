@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
 
-from GUIFiles import MainWindow
+from organize.GUIFiles import MainWindow
 
 
 def main():

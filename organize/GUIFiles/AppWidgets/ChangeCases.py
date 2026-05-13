@@ -2,8 +2,8 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout
 import random
 import pyperclip
 
-from General import Constants
-from CustomWrappers import PyCute
+from organize.General import Constants
+from organize.CustomWrappers import PyCute
 
 
 class ChangeCases(QWidget):
